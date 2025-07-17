@@ -1,0 +1,7 @@
+{
+  "hosting": {
+    "site": "bayustudio",
+    "public": ".",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}

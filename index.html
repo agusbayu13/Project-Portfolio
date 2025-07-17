@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bayu | Web Developer & UI Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body class="no-hero-anim">
+
+  <!-- Splash Screen HTML: Tambahkan sebelum <nav class="navbar"> pada index.html -->
+  <div id="splash-screen">
+    <div class="splash-content">
+      <div class="splash-logo" id="splash-logo">
+        <img src="assets/icon.png" alt="Bayu Logo" width="80" height="80" />
+      </div>
+      <h1 class="splash-title">Bayu</h1>
+      <p class="splash-desc">Web Developer &amp; UI Designer</p>
+      <div class="splash-loader"></div>
+    </div>
+  </div>
+  <nav class="navbar">
+    <div class="navbar-section navbar-left mobile-hide">
+      <a href="#hero" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#works">Works</a>
+    </div>
+    <div class="navbar-section navbar-center">
+      <div class="logo-modern" id="navbar-logo">
+        <a href="#hero" aria-label="Homepage">
+          <img src="assets/icon.png" alt="Bayu Logo" width="60" height="60" />
+        </a>
+      </div>
+      <button class="burger" aria-label="Menu" aria-controls="mobile-menu" aria-expanded="false">
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-section navbar-right mobile-hide">
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+      <label class="switch" title="Toggle dark mode">
+        <input type="checkbox" id="toggle-dark" />
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#works">Works</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+      <label class="switch mobile-switch" title="Toggle dark mode">
+        <input type="checkbox" id="toggle-dark-mobile" />
+        <span class="slider"></span>
+      </label>
+    </div>
+  </nav>
+  <header class="hero" id="hero">
+    <p class="intro">Hello, I'm Bayu —</p>
+    <h1 class="title">Web Developer<br>and UI Designer</h1>
+    <p class="desc">
+      With 6 months of experience, I help businesses and brands grow through modern web development and impactful
+      design solutions. Let's create something exceptional together.
+    </p>
+    <a href="#contact" class="cta-btn">Let's Collaborate</a>
+    <div class="scroll-down-anim" id="scroll-down-anim" title="Scroll to About">
+      <span></span>
+    </div>
+  </header>
+
+  <main>
+    <!-- ABOUT section -->
+    <section id="about" class="section about section-animate">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <div class="about-photo about-photo-animate">
+          <img src="assets/profile.png" alt="Bayu Profile Photo" />
+        </div>
+        <div class="about-content about-content-animate">
+          <p>
+            I am passionate about building user-centric websites and applications that look great and deliver real results.
+            My mission is to bridge the gap between design and technology, ensuring every project is visually stunning,
+            fast, and easy to use.
+          </p>
+          <div class="toolstacks-anim">
+            <h3>My Stacks</h3>
+            <div class="toolstacks-list">
+              <div class="stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  alt="HTML5" /></div>
+              <div class="stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  alt="CSS3" /></div>
+              <div class="stack-icon"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JavaScript" /></div>
+              <div class="stack-icon"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                  alt="TypeScript" /></div>
+              <div class="stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  alt="React" /></div>
+              <div class="stack-icon"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" /></div>
+              <div class="stack-icon"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" /></div>
+              <div class="stack-icon"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" />
+              </div>
+              <div class="stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                  alt="Figma" /></div>
+              <div class="stack-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                  alt="Git" /></div>
+              <div class="stack-icon"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+              </div>
+              <div class="stack-icon"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="section skills section-animate">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card fancy-skill-card">
+          <div class="skill-icon skill-webdev">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+              <path d="M4 5h16v14H4V5zm2 2v10h12V7H6zm3 3h6v2H9v-2z" stroke="currentColor" stroke-width="1.6"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3>Web Development</h3>
+          <ul>
+            <li>HTML5, CSS3, JavaScript (ES6+)</li>
+            <li>React, Next.js</li>
+            <li>Node.js, Express</li>
+            <li>REST API, GraphQL</li>
+          </ul>
+        </div>
+        <div class="skill-card fancy-skill-card">
+          <div class="skill-icon skill-design">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6" />
+              <path d="M6 18L18 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3>UI/UX Design</h3>
+          <ul>
+            <li>Figma, Adobe XD</li>
+            <li>Responsive Design</li>
+            <li>Prototyping & Wireframing</li>
+            <li>Design Systems</li>
+          </ul>
+        </div>
+        <div class="skill-card fancy-skill-card">
+          <div class="skill-icon skill-other">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+              <rect x="4" y="4" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.6" />
+              <path d="M8 8h8v8H8V8z" stroke="currentColor" stroke-width="1.6" />
+            </svg>
+          </div>
+          <h3>Other Skills</h3>
+          <ul>
+            <li>SEO Optimization</li>
+            <li>Performance Tuning</li>
+            <li>Team Collaboration</li>
+            <li>Agile & Scrum</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="works" class="section works section-animate">
+      <h2>Featured Works</h2>
+      <div class="works-grid">
+        <div class="work-card fancy-card">
+          <div class="work-img-wrap">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80"
+              alt="Project 1" />
+            <span class="work-tag">Frontend</span>
+            <span class="work-link">
+              <a href="https://yourprojectdemo.com" target="_blank" title="View Demo">
+                <svg width="21" height="21" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 5v14m7-7H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </a>
+            </span>
+          </div>
+          <h3>Startup Landing Page</h3>
+          <p>Designed and developed a high-converting landing page for a tech startup, increasing signups by 300%.</p>
+          <div class="work-stacks">
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Figma</span>
+          </div>
+        </div>
+        <div class="work-card fancy-card">
+          <div class="work-img-wrap">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+              alt="Project 2" />
+            <span class="work-tag">Fullstack</span>
+            <span class="work-link">
+              <a href="https://yourecommerce.com" target="_blank" title="View Demo">
+                <svg width="21" height="21" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 5v14m7-7H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </a>
+            </span>
+          </div>
+          <h3>eCommerce Platform</h3>
+          <p>Created a seamless shopping experience with custom UI/UX and fast checkout for a local eCommerce brand.</p>
+          <div class="work-stacks">
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+            <span>UI/UX</span>
+          </div>
+        </div>
+        <div class="work-card fancy-card">
+          <div class="work-img-wrap">
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
+              alt="Project 3" />
+            <span class="work-tag">Personal</span>
+            <span class="work-link">
+              <a href="https://yourportfolio.com" target="_blank" title="View Demo">
+                <svg width="21" height="21" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 5v14m7-7H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </a>
+            </span>
+          </div>
+          <h3>Portfolio Website</h3>
+          <p>Built a personal portfolio that showcases design, code, and storytelling in a minimal, elegant style.</p>
+          <div class="work-stacks">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+            <span>Design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="section testimonials section-animate">
+      <h2>Testimonials</h2>
+      <div class="testimonials-list">
+        <blockquote>
+          <p>"Bayu is a rare talent with both technical and creative skills. Our website redesign was a huge success!"</p>
+          <footer>— Sarah, Creative Director</footer>
+        </blockquote>
+        <blockquote>
+          <p>"He delivered our project on time, exceeded expectations, and communicated clearly throughout."</p>
+          <footer>— Michael, Startup Founder</footer>
+        </blockquote>
+        <blockquote>
+          <p>"Working with Bayu was a pleasure. The design system he built improved our workflow."</p>
+          <footer>— Linda, Product Manager</footer>
+        </blockquote>
+      </div>
+    </section>
+    <section id="contact" class="section contact section-animate">
+      <h2>Contact</h2>
+      <p>Interested in working together or have a question? Reach out!</p>
+      <form class="contact-form">
+        <div class="input-group">
+          <input type="text" name="name" placeholder=" " required />
+          <label>Your Name</label>
+        </div>
+        <div class="input-group">
+          <input type="email" name="email" placeholder=" " required />
+          <label>Your Email</label>
+        </div>
+        <div class="input-group">
+          <textarea name="message" placeholder=" " rows="4" required></textarea>
+          <label>Your Message</label>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-social">
+        <a href="mailto:agusbayupam@gmail.com">hello@bayu.dev</a> |
+        <a href="https://linkedin.com/in/agusbayupamungkas" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/agusbayu13" target="_blank">GitHub</a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2025 Agus Bayu Pamungkas. All rights reserved.</p>
+  </footer>
+  <script src="darkmode.js"></script>
+  <script src="scroll-animate.js"></script>
+  <script src="mobile-menu.js"></script>
+  <script>
+    // scroll down anim click
+    document.addEventListener('DOMContentLoaded', function() {
+      var scrollBtn = document.getElementById('scroll-down-anim');
+      if(scrollBtn) {
+        scrollBtn.addEventListener('click', function() {
+          var about = document.getElementById('about');
+          if(about) {
+            about.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      }
+    });
+  </script>
+  <script src="about-animate.js"></script>
+  <script src="splash.js"></script>
+</body>
+</html>
