@@ -1,16 +1,13 @@
 html { scroll-behavior: smooth; }
+
+
+
 body {
   margin: 0;
   font-family: 'Montserrat', 'Inter', Arial, sans-serif;
   background: #FAFBFC; /* soft white */
   color: #21243d;
   transition: background 0.3s, color 0.3s;
-  padding-top: 100px; /* atau sesuaikan dengan tinggi navbar kamu */
-}
-@media (max-width: 900px) {
-  body {
-    padding-top: 70px;
-  }
 }
 a { color: inherit; text-decoration: none; }
 a:focus { outline: 2px solid #39cbb1; }
@@ -22,7 +19,7 @@ a:focus { outline: 2px solid #39cbb1; }
   inset: 0;
   width: 100vw;
   height: 100vh;
-  background: #FAFBFC;
+  background: #FAFBFC; /* soft white */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,18 +126,15 @@ body.splash-logo-finish #navbar-logo {
   justify-content: space-between;
   align-items: flex-start;
   padding: 32px 60px 0 60px;
+  background: #f9fbfd;    /* <-- samakan dengan warna body */
+  backdrop-filter: none;
   flex-wrap: wrap;
   gap: 0;
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  box-shadow: 0 2px 12px #e5e6ec1a;  
-  background: rgba(249, 251, 253, 0.8); /* warna sedikit transparan */
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);  /* untuk Safari */
-  transition: background 0.3s, backdrop-filter 0.3s;
+  z-index: 10;
+  box-shadow: 0 2px 12px #e5e6ec1a;
+  transition: background 0.3s;
 }
 .navbar-section {
   display: flex;

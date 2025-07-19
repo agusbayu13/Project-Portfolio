@@ -6,10 +6,17 @@
   <title>Bayu | Web Developer & UI Designer</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.png">
 </head>
 <body class="no-hero-anim">
-
+<!-- Scroll Indicator Minimalis -->
+<div class="scroll-indicator">
+  <a href="#hero" class="dot active" aria-label="Go to Hero"></a>
+  <a href="#about" class="dot" aria-label="Go to About"></a>
+  <a href="#skills" class="dot" aria-label="Go to Skills"></a>
+  <a href="#works" class="dot" aria-label="Go to Works"></a>
+  <a href="#contact" class="dot" aria-label="Go to Contact"></a>
+</div>
   <!-- Splash Screen HTML: Tambahkan sebelum <nav class="navbar"> pada index.html -->
   <div id="splash-screen">
     <div class="splash-content">
@@ -23,7 +30,6 @@
   </div>
   <nav class="navbar">
     <div class="navbar-section navbar-left mobile-hide">
-      <a href="#hero" class="active">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#works">Works</a>
@@ -65,7 +71,7 @@
     <p class="intro">Hello, I'm Bayu —</p>
     <h1 class="title">Web Developer<br>and UI Designer</h1>
     <p class="desc">
-      With 6 months of experience, I help businesses and brands grow through modern web development and impactful
+      Fresh Graduate Information System with 6 months of experience, I help businesses and brands grow through modern web development and impactful
       design solutions. Let's create something exceptional together.
     </p>
     <a href="#contact" class="cta-btn">Let's Collaborate</a>
@@ -306,6 +312,33 @@
         });
       }
     });
+    // Scroll Indicator
+    // Section IDs sesuai urutan dot
+      const sectionIds = ['hero', 'about', 'skills', 'works', 'contact'];
+      const dots = document.querySelectorAll('.scroll-indicator .dot');
+
+      window.addEventListener('scroll', () => {
+        let current = 0;
+        for (let i = 0; i < sectionIds.length; i++) {
+          const section = document.getElementById(sectionIds[i]);
+          if (section && window.scrollY >= section.offsetTop - 120) {
+            current = i;
+          }
+        }
+        dots.forEach(dot => dot.classList.remove('active'));
+        if (dots[current]) dots[current].classList.add('active');
+      });
+
+      // Optional: Smooth scroll on click
+      dots.forEach((dot, idx) => {
+        dot.addEventListener('click', (e) => {
+          e.preventDefault();
+          const section = document.getElementById(sectionIds[idx]);
+          if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
   </script>
   <script src="about-animate.js"></script>
   <script src="splash.js"></script>
