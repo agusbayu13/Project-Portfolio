@@ -40,17 +40,22 @@
           <img src="assets/icon.png" alt="Bayu Logo" width="60" height="60" />
         </a>
       </div>
+      <!-- Switch for mobile only -->
+      <label class="switch nav-switch-mobile" title="Toggle dark mode">
+        <input type="checkbox" id="toggle-dark-mobile" />
+        <span class="slider"></span>
+      </label>
       <button class="burger" aria-label="Menu" aria-controls="mobile-menu" aria-expanded="false">
         <span class="burger-bar"></span>
         <span class="burger-bar"></span>
         <span class="burger-bar"></span>
       </button>
     </div>
-    <div class="navbar-section navbar-right mobile-hide">
+    <div class="navbar-section navbar-right">
       <a href="#testimonials">Testimonials</a>
       <a href="#contact">Contact</a>
-      <!-- DARK MODE SWITCH DENGAN SVG ICON SUN & MOON DI THUMB -->
-      <label class="switch" title="Toggle dark mode">
+      <!-- Switch for desktop only -->
+      <label class="switch nav-switch-desktop" title="Toggle dark mode">
         <input type="checkbox" id="toggle-dark" />
         <span class="slider"></span>
       </label>
@@ -62,17 +67,14 @@
       <a href="#works">Works</a>
       <a href="#testimonials">Testimonials</a>
       <a href="#contact">Contact</a>
-      <label class="switch mobile-switch" title="Toggle dark mode">
-        <input type="checkbox" id="toggle-dark-mobile" />
-        <span class="slider"></span>
-      </label>
     </div>
   </nav>
   <header class="hero" id="hero">
     <p class="intro">Hello, I'm Bayu —</p>
     <h1 class="title">Web Developer<br>and UI Designer</h1>
     <p class="desc">
-      Fresh Graduate Information System with 6 months of experience, I help businesses and brands grow through modern web development and impactful
+      Fresh Graduate Information System with 6 months of experience, I help businesses and brands grow through modern web
+      development and impactful
       design solutions. Let's create something exceptional together.
     </p>
     <a href="#contact" class="cta-btn">Let's Collaborate</a>
@@ -471,9 +473,13 @@
   <footer class="footer">
     <p>&copy; 2025 Agus Bayu Pamungkas. All rights reserved.</p>
   </footer>
+  <script src="/js/splash.js"></script>
   <script src="/js/darkmode.js"></script>
+  <script src="/js/about-animate.js"></script>
   <script src="/js/scroll-animate.js"></script>
+  <!-- <script src="/js/js_mobile-menu.js"></script> -->
   <script src="/js/mobile-menu.js"></script>
+ 
   <script>
     // scroll down anim click
     document.addEventListener('DOMContentLoaded', function() {
@@ -515,7 +521,5 @@
         });
       });
   </script>
-  <script src="/js/about-animate.js"></script>
-  <script src="/js/splash.js"></script>
 </body>
 </html>
